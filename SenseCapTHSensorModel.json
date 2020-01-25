@@ -1,0 +1,66 @@
+{
+  "@id": "urn:theThingsConferenceOlivier:SenseCapTHSensor_23z:1",
+  "@type": "CapabilityModel",
+  "implements": [
+    {
+      "@id": "urn:theThingsConferenceOlivier:SenseCapTHSensor_23z:zpds5qvuw:1",
+      "@type": "InterfaceInstance",
+      "displayName": {
+        "en": "Temperature and Humidity Sensor"
+      },
+      "name": "_4kd",
+      "schema": {
+        "@id": "urn:olivier:THSensor:1",
+        "@type": "Interface",
+        "comment": "Requires temperature and humidity sensors.",
+        "description": {
+          "en": "Provides functionality to report temperature, humidity. Provides telemetry."
+        },
+        "displayName": {
+          "en": "Temperature and Humidity Sensor"
+        },
+        "contents": [
+          {
+            "@id": "urn:olivier:THSensor:temperature:1",
+            "@type": [
+              "Telemetry",
+              "SemanticType/Temperature"
+            ],
+            "description": {
+              "en": "Current temperature on the device"
+            },
+            "displayName": {
+              "en": "Temperature"
+            },
+            "name": "temperature",
+            "schema": "double",
+            "unit": "Units/Temperature/celsius"
+          },
+          {
+            "@id": "urn:olivier:THSensor:humidity:1",
+            "@type": [
+              "Telemetry",
+              "SemanticType/Humidity"
+            ],
+            "description": {
+              "en": "Current humidity on the device"
+            },
+            "displayName": {
+              "en": "Humidity"
+            },
+            "name": "humidity",
+            "schema": "double",
+            "unit": "Units/Humidity/percent"
+          }
+        ]
+      }
+    }
+  ],
+  "displayName": {
+    "en": "SenseCap TH Sensor"
+  },
+  "contents": [],
+  "@context": [
+    "http://azureiot.com/v1/contexts/IoTModel.json"
+  ]
+}
