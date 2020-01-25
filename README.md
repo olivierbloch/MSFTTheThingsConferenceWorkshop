@@ -4,7 +4,7 @@ Thanks for joining this short workshop.
 In the next hour or so you will be introduced to [Azure IoT Central](https://azure.microsoft.com/services/iot-central/) and [IoT Plug and Play](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play), letting you discover how simple IoT can be.
 The integration with The Things Network and the onboarding of LoRa devices on IoT Plug and Play is in its very early stages and you should expect the experience in integrating The Things Network with Azure Iot to dramatically improve in the coming months. But we couldn't wait to offer you a little taste of what it will become soon.
 
-![](Media\IoTCentralheartTTN.png)
+![](Media/IoTCentralheartTTN.png)
 
 ## Introduction
 
