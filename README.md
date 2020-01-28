@@ -38,12 +38,12 @@ Here are a couple of simple diagrams explaining how things are working today and
 
 In the following steps you will:
 
-* [Hands-on time!](#hands-on-time)
-* [Create your very own (and free) Azure IoT Central application](#create-your-very-own-and-free-azure-iot-central-application)
-* [Add an IoT Plug and Play Certified device to the application](#add-an-iot-plug-and-play-certified-device-to-the-application)
-* [Import an IoT Plug and Play model for your LoRa sensor](#import-an-iot-plug-and-play-model-for-your-lora-sensor)
-* [Bridge TTN to Azure IoT Central and connect the LoRaWAN SenseCap TH Sensor to your application](#bridge-ttn-to-azure-iot-central-and-connect-the-lorawan-sensecap-th-sensor-to-your-application)
-* [Additional challenge](#additional-challenge)
+- [Hands-on time!](#hands-on-time)
+- [Create your very own (and free) Azure IoT Central application](#create-your-very-own-and-free-azure-iot-central-application)
+- [Add an IoT Plug and Play Certified device to the application](#add-an-iot-plug-and-play-certified-device-to-the-application)
+- [Import an IoT Plug and Play model for your LoRa sensor](#import-an-iot-plug-and-play-model-for-your-lora-sensor)
+- [Bridge TTN to Azure IoT Central and connect the LoRaWAN SenseCap TH Sensor to your application](#bridge-ttn-to-azure-iot-central-and-connect-the-lorawan-sensecap-th-sensor-to-your-application)
+- [Additional challenge](#additional-challenge)
 
 ## Create your very own (and free) Azure IoT Central application
 
@@ -161,11 +161,11 @@ As a device manufacturer, the process would consist in creating a Device Model u
 
     ![IoTCentralCapture16.png](Media/IoTCentralCapture16.png)
 
-1. You only need the **Overview** view, then click on "Generate default dashboard(s) view."
+1. Then click on "Generate default dashboard(s) view."
 
     ![IoTCentralCapture17.png](Media/IoTCentralCapture17.png)
 
-1. You can verify that the view is as you like, adapt tiles sizes, style, and position to adapt the dashboard to your user's needs. Once you are done customizing your view for the TH Sensor, click on "Save" then "Publish" to validate the device model version (device models can be edited and will automatically be versioned when you make changes and republish a revised model to the app).
+1. You can verify that the view is as you like, adapt tiles sizes, style, and position to adapt the dashboard to your user's needs. You'll notice that the default overview dashboard has one of the tiles a bit off, that's a known bug of the preview :-). Once you are done customizing your view for the TH Sensor, click on "Save" then "Publish" to validate the device model version (device models can be edited and will automatically be versioned when you make changes and republish a revised model to the app).
 
     ![IoTCentralCapture18.png](Media/IoTCentralCapture18.png)
 
@@ -185,15 +185,13 @@ As indicated earlier, we are using the open-source IoT Central device bridge. In
 
     ![SenseCapTHSensor.jpg](Media/SenseCapTHSensor.jpg)
 
-1. Post the three onto the [workshop Slack channel](https://aka.ms/MSFTWorkshop/Slack):
+1. Post the three onto the [workshop Slack channel](https://aka.ms/MSFTWorkshop/Slack) (you might need to join the )
 
    * Device EUI
    * App ID Scope
    * App primary key
 
-1. Once we setup the bridge to connect to your application, it will provision a new device with the same ID as the EUI in TTN. Then it will start sending telemetry respecting the format defined by the Device Capability Model. However, the bridge is not indicating to IoT Central which device model it is, so you will have to "migrate" the new device once it appears in the IoT Central application to the SenseCap TH Sensor model.
-
- [TODO insert screen capture]
+1. Once we setup the bridge to connect to your application, it will provision a new device with the same ID as the EUI in TTN. Furthermore, thanks to Plug and Play, the device will share with the application what device model to use. This way the application will know to associate this new device to the model you just uploaded in the application importing the JSON file. Then it will start sending telemetry respecting the format defined by the Device Capability Model.
 
 Congratulations, you have successfully connected your LoRaWAN device to Azure IoT Central.
 
