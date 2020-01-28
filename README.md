@@ -47,7 +47,7 @@ In the following steps you will:
 
 ## Create your very own (and free) Azure IoT Central application
 
-Azure IoT Central comes with a free 7-day trial that doesn't require an Azure subscription. If you have an Azure subscription, pay attention at step #4 below
+Azure IoT Central comes with a free 7-day trial that doesn't require an Azure subscription. If you have an Azure subscription, pay attention to step #4 below.
 
 1. Visit [https://apps.azureiotcentral.com](https://apps.azureiotcentral.com) and click on the "Build" button in the left menu.
 
@@ -67,7 +67,7 @@ On the next screen, select "Custom Apps."
 1. Sign in with a Microsoft Account (you can create one if you don't have one already, it's a pretty straight forward process). The sign-in is required so you can easily find your applications in the future. At this point, you can only use a Microsoft account.
 If you have an Azure subscription you want to deploy your app into, use the email registered with this subscription.
 
- ![IoTCentralCapture03.png](Media/IoTCentralCapture03.png)
+    ![IoTCentralCapture03.png](Media/IoTCentralCapture03.png)
 
 1. Fill in the various fields and remember to select "7-day free trial" if you don't have an Azure subscription. If you have a subscription you want to use, enter the corresponding Directory and Subscription.
 
