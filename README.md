@@ -185,13 +185,13 @@ As indicated earlier, we are using the open-source IoT Central device bridge. In
 
     ![SenseCapTHSensor.jpg](Media/SenseCapTHSensor.jpg)
 
-1. Post the three onto the [workshop Slack channel](https://aka.ms/MSFTWorkshop/Slack) (you might need to join the )
+2. To configure the bridge for the right mapping of your device to your Azure IoT Central application we created a Slack App. Join the [Workshop Slack Channel](https://join.slack.com/t/msftthethings-wzr1713/shared_invite/enQtOTEwNzY3OTQzMjgxLTEwZTMwNjhiZjQ0MjY4NGVlY2RlMTc3YjMxMzk0NGY4ZGFlY2ZiMTc2YjY0NTFmYTkwMjJlNzY1YzRmNjRmMjk), then open the [Slack Bot app](https://app.slack.com/client/TT54P2LMC/DTB5JF2HL/app) and enter the below information:
 
    * Device EUI
    * App ID Scope
    * App primary key
 
-1. Once we setup the bridge to connect to your application, it will provision a new device with the same ID as the EUI in TTN. Furthermore, thanks to Plug and Play, the device will share with the application what device model to use. This way the application will know to associate this new device to the model you just uploaded in the application importing the JSON file. Then it will start sending telemetry respecting the format defined by the Device Capability Model.
+3. Once the bridge is setup to connect to your application, it will provision a new device with the same ID as the EUI in TTN. Furthermore, thanks to Plug and Play, the device will share with the application what device model to use. This way the application will know to associate this new device to the model you just uploaded in the application importing the JSON file. Then it will start sending telemetry respecting the format defined by the Device Capability Model.
 
 Congratulations, you have successfully connected your LoRaWAN device to Azure IoT Central.
 
