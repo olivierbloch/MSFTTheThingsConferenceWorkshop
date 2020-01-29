@@ -28,11 +28,11 @@ Here are a couple of simple diagrams explaining how things are working today and
 
 #### Current architecture <!-- omit in toc -->
 
-[TODO]
+![](Media/Architecture1.png)
 
 #### Future architecture <!-- omit in toc -->
 
-[TODO]
+![](Media/Architecture2.png)
 
 ## Hands-on time!
 
