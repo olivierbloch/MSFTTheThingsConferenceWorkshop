@@ -90,7 +90,7 @@ Feel free to navigate your application to discover the different pages. You can 
 IoT Plug and Play is a feature Azure IoT developed on top of the [Digital Twins Definition Model](https://github.com/Azure/IoTPlugandPlay/tree/master/DTDL).
 You can learn what IoT PnP is by watching [this video](https://youtu.be/rzTw1_AuxdQ) (11min long) and/or reading this [introductory documentation page](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play).
 
-DTDL is certainly the most interesting part of IoT Plug and Play as it is the backbone that makes it possible for a device manufacturer to publish his devices' capability models to a public (or private) repository, and for a cloud application developer to easily integrate these devices and their data into their apps.
+DTDL is certainly the most interesting part of IoT Plug and Play as it is the backbone that makes it possible for a device manufacturer to publish their devices' capability models to a public (or private) repository, and for a cloud application developer to easily integrate these devices and their data into their apps.
 Let's see how this works.
 
 1. Go to the Device Templates page clicking in the menu or on the tile.
