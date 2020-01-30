@@ -1,7 +1,7 @@
 # Welcome to The Things Conference Microsoft's workshop <!-- omit in toc -->
 
-Thanks for joining this short workshop.
-In the next hour or so, you will be introduced to [Azure IoT Central](https://azure.microsoft.com/services/iot-central/) and [IoT Plug and Play](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play), letting you discover how simple IoT can be.
+Thanks for joining this short workshop! In the next hour or so, you will be introduced to [Azure IoT Central](https://azure.microsoft.com/services/iot-central/) and [IoT Plug and Play](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play), letting you discover how simple IoT can be.
+
 The integration with The Things Network and the onboarding of LoRa devices on IoT Plug and Play is in its very early stages, and you should expect the experience in integrating The Things Network with Azure IoT to dramatically improve in the coming months. But we couldn't wait to offer you a little taste of what it will become soon.
 
 ![IoT Central _hearts_ TTN](Media/IoTCentralheartTTN.png)
@@ -13,6 +13,7 @@ The integration with The Things Network and the onboarding of LoRa devices on Io
 To go through this workshop, you will need your laptop and a Web browser… that's it!
 
 We will provide a [Seeed Studio SenseCap Temperature and Humidity sensor](https://www.seeedstudio.com/catalogsearch/result/?q=SenseCAP+Air+Temperature) for you to see real data flowing in.
+
 Note that we have taken care of the provisioning of this sensor on The Things Network as well as the setup of the integration through a WebHook to IoT Central. These parts are the ones that will change in the near future, and we want you to focus on the experience with the Cloud stuff!
 
 ### Wondering what Azure IoT Central is about? <!-- omit in toc -->
@@ -28,17 +29,16 @@ Here are a couple of simple diagrams explaining how things are working today and
 
 #### Current architecture <!-- omit in toc -->
 
-![](Media/Architecture1.png)
+![Current Architecture](Media/Architecture1.png)
 
 #### Future architecture <!-- omit in toc -->
 
-![](Media/Architecture2.png)
+![Future Architecture](Media/Architecture2.png)
 
-## Hands-on time!
+## Hands-on time! <!-- omit in toc -->
 
 In the following steps you will:
 
-- [Hands-on time!](#hands-on-time)
 - [Create your very own (and free) Azure IoT Central application](#create-your-very-own-and-free-azure-iot-central-application)
 - [Add an IoT Plug and Play Certified device to the application](#add-an-iot-plug-and-play-certified-device-to-the-application)
 - [Import an IoT Plug and Play model for your LoRa sensor](#import-an-iot-plug-and-play-model-for-your-lora-sensor)
@@ -187,9 +187,9 @@ As indicated earlier, we are using the open-source IoT Central device bridge. In
 
 1. Post the three onto the [workshop Slack channel](https://aka.ms/MSFTWorkshop/Slack) (you might need to join the )
 
-   * Device EUI
-   * App ID Scope
-   * App primary key
+   - Device EUI
+   - App ID Scope
+   - App primary key
 
 1. Once we setup the bridge to connect to your application, it will provision a new device with the same ID as the EUI in TTN. Furthermore, thanks to Plug and Play, the device will share with the application what device model to use. This way the application will know to associate this new device to the model you just uploaded in the application importing the JSON file. Then it will start sending telemetry respecting the format defined by the Device Capability Model.
 
